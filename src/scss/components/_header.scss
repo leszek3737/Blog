@@ -1,0 +1,38 @@
+.header {
+    background: $header-background;
+    height: 600px;
+    &__navbar {
+        &--link {
+            font-family: Lato;
+            color: #ffffff;
+            font-size: 14px;
+            font-weight: 700;
+            line-height: 30px;
+            text-align: left;
+            &.active {
+                color: #02ccb2;
+            }
+        }
+    }
+    ;
+    &__header {
+        height: 30rem;
+        @include c-flex("column", "nowrap", "center", "center");
+        &--h1 {
+            font-family: Raleway;
+            color: #ffffff;
+            font-size: 50px;
+            font-weight: 500;
+            line-height: 70px;
+            text-align: left;
+        }
+        &--h4 {
+            font-family: Lato;
+            color: #f2fcff;
+            font-size: 24px;
+            font-weight: 400;
+            line-height: 38px;
+            text-align: center;
+        }
+    }
+}
