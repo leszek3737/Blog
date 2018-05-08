@@ -1,0 +1,31 @@
+.postMain {
+    &__post {
+        max-height: 1080px;
+        width: 99%;
+        &--img {
+            width: 100%;
+            max-width: 1140px;
+            height: 640px;
+        }
+        ;
+        &--info {
+            font-family: Lato;
+            color: #222222;
+            font-size: 2.4rem;
+            font-weight: 400;
+            transform: scaleX(1.0087);
+            @include c-flex("row", 0, "left")
+        }
+        ;
+        &--header {
+            font-family: Lato;
+            color: #000000;
+            font-size: 3.5rem;
+            font-weight: 700;
+            line-height: 26px;
+            text-align: left;
+            transform: scaleX(1.0087);
+        } 
+        ;
+    }
+}

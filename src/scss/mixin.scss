@@ -72,7 +72,5 @@
     @if $align-i !=0 {
         @include c-flex-align($align-i)
     }
-
-
 }
 

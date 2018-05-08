@@ -3,6 +3,11 @@ html {
 
 }
 
+.main{
+    transform: translateY(-100px);
+}
+
+
 @media screen and (min-width: 424px) {
     html {
         font-size: 62.5%;
