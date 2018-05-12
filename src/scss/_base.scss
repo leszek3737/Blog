@@ -4,6 +4,7 @@ html {
 }
 
 .main{
+    @include c-flex("row", "wrap");
     transform: translateY(-100px);
 }
 
