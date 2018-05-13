@@ -2,9 +2,27 @@
     padding: 0;
     margin: 0;
     width: 33%;
+    height: 100%;
     background-color:  #f6f6f6;
-    height: 2351px;
     @include c-flex("row", "wrap", "center", $align-i: 0);
+    &--title{
+        position: relative;
+        margin:2rem;
+        text-align: center;
+        font-family: Lato;
+        color:  #282828;
+        font-size: 22px;/* Przybliżenie (wynika z podstawienia czcionki) */
+        font-weight: 400;
+        &::before{
+            content: "";
+            position: absolute;
+            width: 20%;
+            height: 0.2rem;
+            background-color: #282828;
+            top: 2.8rem;
+            left: 40%;
+        }
+    }
     &__search{
         margin-top:2rem;
         padding: 0.7rem;
@@ -39,24 +57,7 @@
         padding: 0.7rem;
         width: 350px;
         @include c-flex("column", "wrap", "center", $align-i: 0);
-        &--title{
-            position: relative;
-            margin:2rem;
-            text-align: center;
-            font-family: Lato;
-            color:  #282828;
-            font-size: 22px;/* Przybliżenie (wynika z podstawienia czcionki) */
-            font-weight: 400;
-            &::before{
-                content: "";
-                position: absolute;
-                width: 20%;
-                height: 0.2rem;
-                background-color: #282828;
-                top: 2.8rem;
-                left: 40%;
-            }
-        }
+        
         &--img{
            border-radius: 50%;
            height: 20rem;
@@ -80,6 +81,37 @@
             color:  #282828;
             width: 20rem;
             align-self: center;
+        }
+    }
+    &__best{
+        margin: 1rem; 
+        &--post{
+            margin: 1rem; 
+            @include c-flex("row", "no-wrap", "center", $align-i: 0);
+        }
+        &--img{
+            height: 8rem;
+            width: 8rem;
+            align-self: center;
+         } 
+         &--title{
+            font-family: Lato;
+            color:  #868686;
+            font-size: 22px;/* Przybliżenie (wynika z podstawienia czcionki) */
+            font-weight: 500;
+            text-align: left;
+        }
+        &--date{   
+            font-family: Lato;
+            color:  #868686;
+            font-size: 18px;/* Przybliżenie (wynika z podstawienia czcionki) */
+            font-style: italic;
+            line-height: 26px;/* Przybliżenie (wynika z podstawienia czcionki) */
+            text-align: left;
+        }
+        &--content{
+            margin: 1rem; 
+            margin-right: 0;
         }
     }
 }
